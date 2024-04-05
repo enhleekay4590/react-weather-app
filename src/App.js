@@ -5,15 +5,15 @@ function App() {
     <div className="App">
       <h1> Weather App </h1>
       <footer>
-        This project was coded by
-        <a href="#" target="_blank">
-          {" "}
+        This project was coded by{" "}
+        <a href="www.minenhlekubheka.com" target="_blank" rel="noreferrer">
           Minenhle S. Kubheka
         </a>{" "}
         and is{" "}
         <a
           href="https://github.com/enhleekay4590/react-weather-app"
           target="_blank"
+          rel="noreferrer"
         >
           open-sourced on GitHub
         </a>
