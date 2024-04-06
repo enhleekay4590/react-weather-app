@@ -9,6 +9,7 @@ export default function Weather(props) {
       ready: true,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
+      date: "Saturday 08:40",
       city: response.data.name,
       description: response.data.weather[0].description,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
@@ -44,7 +45,7 @@ export default function Weather(props) {
         </form>
         <h1>{weather.city}</h1>
         <ul>
-          <li>Saturday 14:30</li>
+          <li>{weather.date}</li>
           <li className="text-capitalize">{weather.description}</li>
         </ul>
         <div className="row">
@@ -65,7 +66,6 @@ export default function Weather(props) {
           </div>
           <div className="col-6">
             <ul>
-              <li>Precipitation: 0%</li>
               <li>Humidity: {weather.humidity}%</li>
               <li>Wind: {weather.wind}km/h</li>
             </ul>
