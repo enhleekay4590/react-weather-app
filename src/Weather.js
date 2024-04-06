@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import DateUpdated from "./DateUpdated";
 import axios from "axios";
+
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -9,7 +11,7 @@ export default function Weather(props) {
       ready: true,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
-      date: "Saturday 08:40",
+      date: new Date(response.data.dt * 1000),
       city: response.data.name,
       description: response.data.weather[0].description,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
@@ -45,7 +47,9 @@ export default function Weather(props) {
         </form>
         <h1>{weather.city}</h1>
         <ul>
-          <li>{weather.date}</li>
+          <li>
+            <DateUpdated date="weather.date" />
+          </li>
           <li className="text-capitalize">{weather.description}</li>
         </ul>
         <div className="row">
