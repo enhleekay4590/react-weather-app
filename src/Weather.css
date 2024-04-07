@@ -10,17 +10,17 @@
   margin-bottom: 20px;
 }
 
-.Weather h1 {
+.UpdatedInfo h1 {
   font-size: 24px;
   font-weight: 100;
   line-height: 29px;
   margin: 20px 0 0 0;
 }
-.Weather ul {
+.UpdatedInfo ul {
   margin: 0;
   padding: 0;
 }
-.Weather li {
+.UpdatedInfo li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
