@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-
+import UpdatedInfo from "./UpdatedInfo";
 import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     setWeather({
       ready: true,
@@ -21,6 +22,7 @@ export default function Weather(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    apiInput();
   }
 
   function cityUpdates(event) {
@@ -56,6 +58,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
+        <UpdatedInfo data={weather} />
       </div>
     );
   } else {

@@ -1,7 +1,7 @@
 import React from "react";
 import DateUpdated from "./DateUpdated";
 import UpdatedIcon from "./UpdatedIcon";
-import WeatherTemperature from "./WeatherTemperature";
+import UpdatedTemperature from "./UpdatedTemperature";
 
 export default function UpdateInfo(props) {
   return (
@@ -21,7 +21,7 @@ export default function UpdateInfo(props) {
             </div>
 
             <div>
-              <WeatherTemperature celsius={props.data.temperature} />
+              <UpdatedTemperature celsius={props.data.temperature} />
             </div>
           </div>
         </div>
