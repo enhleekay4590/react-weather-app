@@ -16,10 +16,9 @@ export default function UpdateInfo(props) {
       <div className="row mt-3">
         <div className="col-6">
           <div className="d-flex">
-            <div>
+            <div className="forecast-details">
               <UpdatedIcon code={props.data.icon} size={52} />
             </div>
-
             <div>
               <UpdatedTemperature celsius={props.data.temperature} />
             </div>

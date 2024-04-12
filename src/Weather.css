@@ -1,9 +1,17 @@
+body {
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  max-width: 1800px;
+}
 .Weather {
   border: 1px solid rgb(218, 197, 197);
   font-family: Arial, Helvetica, sans-serif;
-  color: rgba(41, 39, 39, 0.61);
+  color: rgba(155, 38, 38, 0.61);
   padding: 16px;
   border-radius: 4px;
+  max-width: 900px;
+  margin-left: 120px;
+  padding-bottom: 50px;
+  background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 }
 
 .Weather form {
